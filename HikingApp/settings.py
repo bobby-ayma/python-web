@@ -36,7 +36,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'hikemuch_auth',
-    # 'hikemuch',
+    'hikemuch_app',
     'bootstrap4',
 
 ]

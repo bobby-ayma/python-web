@@ -1,10 +1,10 @@
 <div class="card m-3" style="width: 18rem;">
-    <img class="card-img-top" src="{{ python.image.url }}" alt="Card image cap">
+    <img class="card-img-top" src="{{ hike.image.url }}" alt="Card image cap">
     <div class="card-body">
-        <h5 class="card-title">{{ python.name }}</h5>
-        <p class="card-text">{{ python.description }}</p>
-        <a href="{% url 'python details' python.id python.name %}">See more</a>
-        {% if python.can_delete %}
+        <h5 class="card-title">{{ hike.name }}</h5>
+        <p class="card-text">{{ hike.description }}</p>
+        <a href="{% url 'python details' hike.id hike.name %}">See more</a> #to be changed to actually show details of the hike.
+        {% if hike.can_delete %}
             <button class="btn btn-danger">Delete</button>
         {% endif %}
     </div>
